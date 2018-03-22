@@ -81,15 +81,15 @@ p.kont::after {
   z-index: -1;   
   border-radius: 10px; 
 }
- .slideUp {
-    animation-name: slideUp;
-    -webkit-animation-name: slideUp;
-    animation-duration: 2.5s;
-    -webkit-animation-duration: 2.5s;
+ .slideLeft {
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: 2.3s;
+    -webkit-animation-duration: 2.3s;
     visibility: visible;
 }
 
-@keyframes slideUp {
+@keyframes slideLeft {
     0% {
         opacity: 0;
           -ms-transform: translate(100%, 50%);
@@ -98,9 +98,9 @@ p.kont::after {
     }
        50% {
         opacity: 0.5;
-    -ms-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
     }
     100% {
         opacity: 1;
@@ -108,7 +108,7 @@ p.kont::after {
     }
 }
 
-@-webkit-keyframes slideUp {
+@-webkit-keyframes slideLeft {
      0% {
         opacity: 0;
           -ms-transform: translate(100%, 50%);
@@ -117,16 +117,64 @@ p.kont::after {
     }
        50% {
         opacity: 0.5;
-    -ms-transform: scale(0.8, 0.8);
-    -webkit-transform: scale(0.8, 0.8);
-    transform: scale(0.8, 0.8);
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateY(0%);
     }
 }
-.hidebox {opacity: 0;}
+.hidebox1 {opacity: 0;}
+
+.slideRight {
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 2.3s;
+    -webkit-animation-duration: 2.3s;
+    visibility: visible;
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+          -ms-transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+    }
+       50% {
+        opacity: 0.5;
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideRight {
+     0% {
+        opacity: 0;
+          -ms-transform: translate(-100%, -50%);
+    -webkit-transform: translate(-100%, -50%);
+    transform: translate(-100%, -50%);
+    }
+       50% {
+        opacity: 0.5;
+    -ms-transform: scale(0.9, 0.9);
+    -webkit-transform: scale(0.9, 0.9);
+    transform: scale(0.9, 0.9);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.hidebox2 {opacity: 0;}
+
 img.ssld {
     width: 100%;
     height: 50vh;
