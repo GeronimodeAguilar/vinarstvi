@@ -84,23 +84,23 @@ p.kont::after {
  .slideUp {
     animation-name: slideUp;
     -webkit-animation-name: slideUp;
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-duration: 2.5s;
     visibility: visible;
 }
 
 @keyframes slideUp {
     0% {
         opacity: 0;
-          -ms-transform: translate(50%, 50%);
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(50%, 50%);
+          -ms-transform: translate(100%, 50%);
+    -webkit-transform: translate(100%, 50%);
+    transform: translate(100%, 50%);
     }
        50% {
         opacity: 0.5;
-    -ms-transform: scale(0.5, 0.5) skew(10deg, 10deg);
-    -webkit-transform: scale(0.5, 0.5) skew(10deg, 10deg);
-    transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
     }
     100% {
         opacity: 1;
@@ -111,15 +111,15 @@ p.kont::after {
 @-webkit-keyframes slideUp {
      0% {
         opacity: 0;
-          -ms-transform: translate(50%, 50%);
-    -webkit-transform: translate(50%, 50%);
-    transform: translate(50%, 50%);
+          -ms-transform: translate(100%, 50%);
+    -webkit-transform: translate(100%, 50%);
+    transform: translate(100%, 50%);
     }
        50% {
         opacity: 0.5;
-    -ms-transform: scale(0.5, 0.5) skew(10deg, 10deg);
-    -webkit-transform: scale(0.5, 0.5) skew(10deg, 10deg);
-    transform: scale(0.5, 0.5) skew(10deg, 10deg);
+    -ms-transform: scale(0.8, 0.8);
+    -webkit-transform: scale(0.8, 0.8);
+    transform: scale(0.8, 0.8);
     }
     100% {
         opacity: 1;
@@ -170,7 +170,7 @@ img.erb {
     animation-duration: 10s;
     -webkit-animation-duration: 10s;
     animation-fill-mode: forwards;
-    animation-delay: 5s;
+    animation-delay: 10s;
 }
 
 @keyframes fadinglogo {
@@ -272,7 +272,7 @@ div.foo {
     animation-duration: 20s;
     -webkit-animation-duration: 20s;
     animation-fill-mode: forwards;
-    animation-delay: 10s;
+    animation-delay: 20s;
 }
 
 @keyframes fadingtite {
