@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 html {
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
 }
 body {
   background-color: hsla(26, 27%, 46%, 0.2);
@@ -736,19 +736,19 @@ img.artcls {
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 0.9s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 0.9s;
   animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .8} 
+  from {opacity: .9} 
   to {opacity: 1}
 }
 
 @keyframes fade {
-  from {opacity: .8} 
+  from {opacity: .9} 
   to {opacity: 1}
 }
 
