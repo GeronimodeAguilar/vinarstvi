@@ -55,6 +55,32 @@ p.txty::after {
   z-index: -1;   
   border-radius: 10px; 
 }
+p.aktual {
+  color: hsl(240, 100%, 40%);
+  background-color: hsla(240, 100%, 95%, 0.7);
+  font-family: 'Oldenburg', "Lucida Grande", sans-serif;
+  font-weight: 800;
+  border-radius: 10px;
+  margin: 10px auto 20px;
+  padding: 10px;
+  width: 90%;
+  text-align: center;
+  line-height: 1.2em;
+  font-size: 1.4em;
+  position: relative;
+}
+p.aktual::after {
+  content: "";
+  background:  url("../../img/bkg/korek1920x1080.svg") center /100% repeat;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  border-radius: 10px; 
+} 
 p.kont {
   color: hsl(240, 100%, 40%);
   background-color: hsla(240, 100%, 95%, 0.7);
@@ -174,6 +200,49 @@ p.kont::after {
     }
 }
 .hidebox2 {opacity: 0;}
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    visibility: visible;
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+          -ms-transform: translate(0%, 100%);
+    -webkit-transform: translate(0%, 100%);
+    transform: translate(0%, 100%);
+    }
+       50% {
+        opacity: 0.4;
+
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+
+@-webkit-keyframes slideUp {
+     0% {
+        opacity: 0;
+          -ms-transform: translate(0%, 100%);
+    -webkit-transform: translate(0%, 100%);
+    transform: translate(0%, 100%);
+    }
+       50% {
+        opacity: 0.4;
+
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+    }
+}
+.hidebox3 {opacity: 0;}
 
 img.ssld {
     width: 100%;

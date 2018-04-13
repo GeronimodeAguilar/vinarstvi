@@ -1,3 +1,4 @@
+'use strict';
 var slideIndex = 0;
 showSlides();
 
@@ -27,32 +28,39 @@ function myFunction() {
     }
 }
 
-var animateHTML = function () {
-  var elems1, elems2,
+let animateHTML = function () {
+  let elems1, elems2, elems3,
     windowHeight;
-  var init = function () {
+  let init = function () {
     elems1 = document.getElementsByClassName('hidebox1');
     elems2 = document.getElementsByClassName('hidebox2');
+    elems3 = document.getElementsByClassName('hidebox3');
     windowHeight = window.innerHeight;
     _addEventHandlers();
   };
-  var _addEventHandlers = function () {
+  let _addEventHandlers = function () {
     window.addEventListener('scroll', _checkPosition);
     window.addEventListener('resize', init);
   };
-  var _checkPosition = function () {
-    for (var i = 0; i < elems1.length; i++) {
-      var posFromTop1 = elems1[i].getBoundingClientRect().top;
+  let _checkPosition = function () {
+    for (let i = 0; i < elems1.length; i++) {
+      let posFromTop1 = elems1[i].getBoundingClientRect().top;
       if (posFromTop1 - windowHeight <= 0) {
         elems1[i].className = elems1[i].className.replace('hidebox1', 'slideLeft');
       }
     }
-  for (var j = 0; j < elems2.length; j++) {
-      var posFromTop2 = elems2[j].getBoundingClientRect().top;
+  for (let j = 0; j < elems2.length; j++) {
+      let posFromTop2 = elems2[j].getBoundingClientRect().top;
       if (posFromTop2 - windowHeight <= 0) {
         elems2[j].className = elems2[j].className.replace('hidebox2', 'slideRight');
       }       
     }
+  for (let k = 0; k < elems3.length; k++) {
+      let posFromTop3 = elems3[k].getBoundingClientRect().top;
+      if (posFromTop3 - windowHeight <= 0) {
+        elems3[k].className = elems3[k].className.replace('hidebox3', 'slideUp');
+      }       
+    }      
   };
   return {
     init: init
