@@ -273,6 +273,19 @@ img.sld {
 img.fot {
      height: 8em;
   }
+.picbox {
+  position: absolute;
+  width: 30%;
+ top: 60%;
+  left: 50%;
+      padding: 0px;
+    transform: translate(-50%, -50%);
+  }
+
+.pic {
+  width: 90%;
+  }  
+
 img.erb {
   position: absolute;
   width: 30%;
@@ -747,6 +760,30 @@ img.artcls {
        z-index: 1;
        border-radius: 10px;
 } 
+.player {
+  border:0;
+  box-shadow:0;
+  position: relative;
+  font-size: 0;
+  overflow: hidden;
+    height: 100vh;
+}
+
+/* This css is only applied when fullscreen is active. */
+.player:fullscreen {
+  max-width: none;
+  width: 100%;
+}
+
+.player:-webkit-full-screen {
+  max-width: none;
+  width: 100%;
+}
+
+.player__video {
+      height:120vh;
+          overflow: hidden; 
+}
 
 .mySlides {display: none;}
 /* Slideshow container */
@@ -934,6 +971,19 @@ img.artcls {
    font-weight: 900;
   padding: 2px;
 }
+.picbox {
+  position: absolute;
+  width: 50%;
+ top: 55%;
+  left: 50%;
+      padding: 0px;
+    transform: translate(-50%, -50%);
+  }
+
+.pic {
+  width: 100%;
+  }  
+
 img.erb {
   position: absolute;
   width: 50%;
