@@ -92,7 +92,7 @@ span.onclick = function() {
     modal.style.display = "none";
 }
 
-
+/*
 const hero = document.querySelector('.picbox');
 const logo = hero.querySelector('.pic');
     
@@ -108,4 +108,12 @@ translate(${x}%, ${y}%) skew(${x}deg,${-y}deg)
 `;
 }    
     
-hero.addEventListener('mousemove', logoMove);    
+hero.addEventListener('mousemove', logoMove);*/    
+
+
+       let card = document.querySelector('.pic');
+document.addEventListener('mousemove', function(e) {
+  let xAxis = -(window.innerWidth / 2 - e.pageX) / 20;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 20;
+  card.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+});
