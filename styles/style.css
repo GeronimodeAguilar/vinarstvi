@@ -171,7 +171,7 @@ h2.clip_text {
 
 #clip_rouby {
     background-image: url(../img/bkg/list_back_green_vyrez_makro.jpg);
-    height: 40vh;
+    height: 70vh;
     line-height: 13vh;
 }
 
@@ -315,84 +315,164 @@ nav.short_nav {
 }  
     
 #p1i1 {
+    background-image: url(../img/bkhd/borsice_kostel_side_jaro_kvet_longshot.jpg);     
+} 
+
+#p1i1.lazyback {
     background-image: url(../img/bkg/borsice_kostel_side_jaro_kvet_longshot.jpg);     
 }  
     
 #p1i2 {
-    background-image: url(../img/bkg/vinice_10_shora_jaro_radek_1920x1080.jpg);     
+    background-image: url(../img/bkhd/vinice_10_shora_jaro_radek_1920x1080.jpg);     
 }  
+
+#p1i2.lazyback {
+    background-image: url(../img/bkg/vinice_10_shora_jaro_radek_1920x1080.jpg);     
+} 
     
 #p1i3 {
-    background-image: url(../img/bkg/radovanyzoom1920x1080.jpg);     
+    background-image: url(../img/bkhd/radovanyzoom1920x1080.jpg);     
 }  
+
+#p1i3.lazyback {
+    background-image: url(../img/bkg/radovanyzoom1920x1080.jpg);     
+} 
     
 #p1i4 {
+    background-image: url(../img/bkhd/vinice_2_radky_slunce_offfocus.jpg);     
+} 
+
+#p1i4.lazyback {
     background-image: url(../img/bkg/vinice_2_radky_slunce_offfocus.jpg);     
 } 
 
 #p2i1 {
+    background-image: url(../img/bkhd/velehrad_sundown_red-black_church.jpg);     
+}  
+
+#p2i1.lazyback {
     background-image: url(../img/bkg/velehrad_sundown_red-black_church.jpg);     
 }  
     
 #p2i2 {
-    background-image: url(../img/bkg/valtice_chatou_fountain_lokkout_storm.jpg);     
+    background-image: url(../img/bkhd/valtice_chatou_fountain_lokkout_storm.jpg);     
 }  
+
+#p2i2.lazyback {
+    background-image: url(../img/bkg/valtice_chatou_fountain_lokkout_storm.jpg);     
+} 
     
 #p2i3 {
-    background-image: url(../img/bkg/stanice_stavba_side_snih.jpg);     
+    background-image: url(../img/bkhd/stanice_stavba_side_snih.jpg);     
 }  
+
+#p2i3.lazyback {
+    background-image: url(../img/bkg/stanice_stavba_side_snih.jpg);     
+} 
     
 #p2i4 {
+    background-image: url(../img/bkhd/radky_sazenice.jpg);     
+} 
+
+#p2i4.lazyback {
     background-image: url(../img/bkg/radky_sazenice.jpg);     
 } 
 
 #p3i1 {
-    background-image: url(../img/bkg/stanice_right_front_long_top.jpg);     
+    background-image: url(../img/bkhd/stanice_right_front_long_top.jpg);     
 }  
+
+#p3i1.lazyback {
+    background-image: url(../img/bkg/stanice_right_front_long_top.jpg);     
+} 
     
 #p3i2 {
-    background-image: url(../img/bkg/stanice_radek_back_side_1920x1080.jpg);     
+    background-image: url(../img/bkhd/stanice_radek_back_side_1920x1080.jpg);     
 }  
+
+#p3i2.lazyback {
+    background-image: url(../img/bkg/stanice_radek_back_side_1920x1080.jpg);     
+} 
     
 #p3i3 {
-    background-image: url(../img/bkg/stanice_back_vinice_zoom.jpg);     
+    background-image: url(../img/bkhd/stanice_back_vinice_zoom.jpg);     
 }  
+
+#p3i3.lazyback {
+    background-image: url(../img/bkg/stanice_back_vinice_zoom.jpg);     
+} 
     
 #p3i4 {
-    background-image: url(../img/bkg/stanice_back_right_vinice.jpg);     
+    background-image: url(../img/bkhd/stanice_back_right_vinice.jpg);     
 }
 
+#p3i4.lazyback {
+    background-image: url(../img/bkg/stanice_back_right_vinice.jpg);     
+} 
+
 #p4i1 {
+    background-image: url(../img/bkhd/jetel_radek_colors.jpg);     
+} 
+
+#p4i1.lazyback {
     background-image: url(../img/bkg/jetel_radek_colors.jpg);     
-}  
+} 
     
 #p4i2 {
-    background-image: url(../img/bkg/vinice_10_kostel_sloupky_jaro.jpg);     
-}  
-    
-#p4i3 {
-    background-image: url(../img/bkg/stanice_vinice_sazenice.jpg);     
-}  
-    
-#p4i4 {
-    background-image: url(../img/bkg/sazenice_tyc_listy_zoom_bright.jpg);     
+    background-image: url(../img/bkhd/vinice_10_kostel_sloupky_jaro.jpg);     
 }  
 
-#p5i1 {
-    background-image: url(../img/bkg/borsice_kostel_trava_green_1920x1080.jpg);     
+#p4i2.lazyback {
+    background-image: url(../img/bkg/vinice_10_kostel_sloupky_jaro.jpg);     
+} 
+    
+#p4i3 {
+    background-image: url(../img/bkhd/stanice_vinice_sazenice.jpg);     
 }  
+
+#p4i3.lazyback {
+    background-image: url(../img/bkg/stanice_vinice_sazenice.jpg);     
+} 
+    
+#p4i4 {
+    background-image: url(../img/bkhd/sazenice_tyc_listy_zoom_bright.jpg);     
+}  
+
+#p4i4.lazyback {
+    background-image: url(../img/bkg/sazenice_tyc_listy_zoom_bright.jpg);     
+} 
+
+#p5i1 {
+    background-image: url(../img/bkhd/borsice_kostel_trava_green_1920x1080.jpg);     
+}
+
+#p5i1.lazyback {
+    background-image: url(../img/bkg/borsice_kostel_trava_green_1920x1080.jpg);     
+} 
     
 #p5i2 {
-    background-image: url(../img/bkg/stanice_right_short_bright.jpg);     
+    background-image: url(../img/bkhd/stanice_right_short_bright.jpg);     
 }  
+
+#p5i2.lazyback {
+    background-image: url(../img/bkg/stanice_right_short_bright.jpg);     
+} 
     
 #p5i3 {
+    background-image: url(../img/bkhd/stanice_vysilac_vinice_back.jpg);     
+} 
+
+#p5i3.lazyback {
     background-image: url(../img/bkg/stanice_vysilac_vinice_back.jpg);     
-}  
+} 
     
 #p5i4 {
+    background-image: url(../img/bkhd/stanice_back_right_cesta.jpg);     
+} 
+
+#p5i4.lazyback {
     background-image: url(../img/bkg/stanice_back_right_cesta.jpg);     
-}   
+} 
     
         
 .move {
@@ -1114,6 +1194,7 @@ footer {
 .card_image {
     width: 100vw;
     height: 100vh;
+    transition: filter 500ms linear;
 }
     
 .odruda_card:hover .card_image {

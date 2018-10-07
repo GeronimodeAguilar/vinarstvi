@@ -279,7 +279,7 @@ for (i = 0; i < accordionItems.length; i++) {
 	accordionItems[i].addEventListener('click',openAccordion);    
 }    
 
-const toLoadPic = document.querySelectorAll('.modalclass');
+const toLoadPic = document.querySelectorAll('.lazypic');
 
 const options = {
 	// If the image gets within 50px in the Y axis, start the download.
@@ -342,10 +342,58 @@ function animateVertically () {
     
 	requestAnimationFrame(animateVertically);
 }
-   
+
 animateVertically();
 
-      
+document.addEventListener("DOMContentLoaded", function() {
+  var lazyloadImages;    
+  if ("IntersectionObserver" in window) {
+    lazyloadImages = document.querySelectorAll(".lazyback");
+   
+    var imageObserver = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(function(entry) {   
+        if (entry.isIntersecting) {
+          var image = entry.target;
+          image.classList.remove("lazyback");
+          imageObserver.unobserve(image);
+        }
+      });
+    });
+
+    lazyloadImages.forEach(function(image) {
+      imageObserver.observe(image);
+    });
+  } else {  
+    var lazyloadThrottleTimeout;
+    lazyloadImages = document.querySelectorAll(".lazyback");
+    
+    function lazyload () {
+      if(lazyloadThrottleTimeout) {
+        clearTimeout(lazyloadThrottleTimeout);
+      }    
+
+      lazyloadThrottleTimeout = setTimeout(function() {
+        var scrollTop = window.pageYOffset;
+        lazyloadImages.forEach(function(img) {
+            if(img.offsetTop < (window.innerHeight + scrollTop)) {
+              img.src = img.dataset.src;
+              img.classList.remove('lazyback');
+            }
+        });
+        if(lazyloadImages.length == 0) { 
+          document.removeEventListener("scroll", lazyload);
+          window.removeEventListener("resize", lazyload);
+          window.removeEventListener("orientationChange", lazyload);
+        }
+      }, 20);
+    }
+
+    document.addEventListener("scroll", lazyload);
+    window.addEventListener("resize", lazyload);
+    window.addEventListener("orientationChange", lazyload);
+  }
+})
+
 function pageLoaded() {
 	loaderWrapper.classList.add('hide_loader');
 }  
